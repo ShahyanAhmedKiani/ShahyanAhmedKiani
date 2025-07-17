@@ -28,3 +28,9 @@ I'm a passionate Web Developer and AI Engineer dedicated to building next-genera
 <b>My GitHub Stats</b>
 
 <a href="http://www.github.com/ShahyanAhmedKiani"><img src="https://github-readme-stats.vercel.app/api?username=ShahyanAhmedKiani&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="ShahyanAhmedKiani's GitHub stats" /></a>
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"> <img src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="40" height="40"/> </a> </p>
+
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=shahyanahmedkiani&show_icons=true&locale=en&layout=compact" alt="shahyanahmedkiani" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=shahyanahmedkiani&" alt="shahyanahmedkiani" />
+</p>
