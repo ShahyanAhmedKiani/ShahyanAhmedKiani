@@ -21,18 +21,15 @@ I'm a passionate Web Developer and AI Engineer dedicated to building next-genera
 <!-- language-stats-start -->
 ## 📊 Language Stats
 
-| Language | Percentage |
-|----------|------------|
-| Jupyter Notebook | 63.6% |
-| C# | 12.6% |
-| HTML | 9.9% |
-| Kotlin | 3.7% |
-| C++ | 2.8% |
-| Python | 2.6% |
-| CSS | 2.2% |
-| JavaScript | 1.5% |
-| Java | 0.7% |
-
+```mermaid
+pie showData
+    title Code Language Distribution
+    "Python" : 65.3
+    "JavaScript" : 22.1
+    "TypeScript" : 8.4
+    "Shell" : 2.7
+    "HTML" : 1.5
+```
 <!-- language-stats-end -->
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
