@@ -1,5 +1,6 @@
 import os
 import requests
+from datetime import datetime
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 USERNAME = os.getenv("USERNAME")
@@ -21,44 +22,80 @@ def fetch_all_repos():
             print(f"⚠️ Failed to fetch repos (status {res.status_code})")
             break
         data = res.json()
-        if not data:
+        if not 
             break
         repos.extend(data)
         page += 1
+    print(f"✅ Fetched {len(repos)} repositories")
     return repos
 
 def aggregate_languages(repos):
     lang_bytes = {}
+    total_repos = len(repos)
+    processed = 0
+    
     for repo in repos:
+        repo_name = repo.get("name")
         lang_url = repo.get("languages_url")
         if not lang_url:
             continue
+        
         res = requests.get(lang_url, headers=HEADERS)
         if res.status_code == 200:
-            for lang, size in res.json().items():
-                lang_bytes[lang] = lang_bytes.get(lang, 0) + size
+            langs = res.json()
+            if langs:
+                for lang, size in langs.items():
+                    lang_bytes[lang] = lang_bytes.get(lang, 0) + size
+                processed += 1
+                print(f"   {repo_name}: {list(langs.keys())}")
+    
+    print(f"✅ Processed {processed}/{total_repos} repos with code")
+    print(f"🌐 Found {len(lang_bytes)} unique languages")
     return lang_bytes
 
 def generate_stats_md(lang_bytes):
-   def generate_stats_md(lang_bytes):
     total = sum(lang_bytes.values())
     if total == 0:
         return "📊 No language data found."
 
     sorted_langs = sorted(lang_bytes.items(), key=lambda x: x[1], reverse=True)
     
-    # Mermaid pie chart syntax
-    lines = ["## 📊 Language Stats", "", "```mermaid", "pie showData", "title Code Language Distribution"]
+    # Prepare data for bar chart (top 12 for clean rendering)
+    max_bars = 12
+    chart_langs = sorted_langs[:max_bars]
     
+    x_labels = []
+    y_values = []
+    
+    for lang, size in chart_langs:
+        pct = (size / total) * 100
+        if pct >= 1.0:  # Only show languages ≥1% to keep chart readable
+            safe_lang = lang.replace('"', '\\"').replace("'", "\\'")
+            x_labels.append(f'"{safe_lang}"')
+            y_values.append(f"{pct:.1f}")
+    
+    if not x_labels:
+        return "📊 No significant language data found."
+
+    # Generate Mermaid bar chart (GitHub native)
+    mermaid_chart = f"""```mermaid
+bar
+    title "Code Language Distribution (%)"
+    x-axis [{', '.join(x_labels)}]
+    y-axis "0" "20" "40" "60" "80" "100"
+    bar "Percentage" [{', '.join(y_values)}]
+```"""
+
+    # Generate detailed table below the chart
+    table_lines = ["### 📈 Full Breakdown", "", "| Language | Bytes | Percentage |", "|----------|-------|------------|"]
     for lang, size in sorted_langs:
         pct = (size / total) * 100
-        if pct >= 1.0:  # Show languages with >=1% usage
-            # Escape special chars in language names for Mermaid
-            safe_lang = lang.replace('"', '\\"')
-            lines.append(f'    "{safe_lang}" : {pct:.1f}')
+        if pct >= 0.5:
+            table_lines.append(f"| {lang} | {size:,} | {pct:.1f}% |")
     
-    lines.extend(["```", ""])
-    return "\n".join(lines)
+    timestamp = f"*🔄 Last updated: {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}*"
+    
+    return f"##  Language Stats\n\n{mermaid_chart}\n\n{'\n'.join(table_lines)}\n\n{timestamp}\n"
 
 def update_readme(new_content):
     with open(README_FILE, "r", encoding="utf-8") as f:
@@ -76,7 +113,7 @@ def update_readme(new_content):
 if __name__ == "__main__":
     print("🔍 Fetching repositories...")
     repos = fetch_all_repos()
-    print(f"📦 Found {len(repos)} repositories.")
+    print(f" Total: {len(repos)} repositories")
     print("🌐 Calculating language stats...")
     lang_bytes = aggregate_languages(repos)
     md = generate_stats_md(lang_bytes)
