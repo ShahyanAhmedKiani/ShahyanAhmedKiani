@@ -24,19 +24,36 @@ I'm a passionate Web Developer and AI Engineer dedicated to building next-genera
 ```mermaid
 pie showData
     title Code Language Distribution
-    "Python" : 45.23
-    "JavaScript" : 18.45
-    "C++" : 12.67
-    "Java" : 8.34
-    "HTML" : 5.12
-    "CSS" : 3.45
-    "TypeScript" : 2.89
-    "Kotlin" : 1.23
-    "Shell" : 0.98
-    "Markdown" : 0.67
-    "PowerShell" : 0.45
-    "MySQL" : 0.34
-    "MongoDB" : 0.12
+    "Jupyter Notebook" : 63.62
+    "C#" : 12.56
+    "HTML" : 9.92
+    "Kotlin" : 3.72
+    "C++" : 2.83
+    "Python" : 2.59
+    "CSS" : 2.21
+    "JavaScript" : 1.55
+    "Java" : 0.67
+    "Dockerfile" : 0.21
+    "Shell" : 0.12
+```
+
+### 📈 Detailed Breakdown
+
+| Language | Bytes | Percentage |
+|----------|-------|------------|
+| Jupyter Notebook | 1,401,770 | 63.62% |
+| C# | 276,722 | 12.56% |
+| HTML | 218,668 | 9.92% |
+| Kotlin | 81,979 | 3.72% |
+| C++ | 62,442 | 2.83% |
+| Python | 56,979 | 2.59% |
+| CSS | 48,631 | 2.21% |
+| JavaScript | 34,130 | 1.55% |
+| Java | 14,722 | 0.67% |
+| Dockerfile | 4,520 | 0.21% |
+| Shell | 2,683 | 0.12% |
+
+*🔄 Last updated: 2026-05-03 14:58 UTC*
 <!-- language-stats-end -->
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
