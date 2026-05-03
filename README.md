@@ -21,34 +21,22 @@ I'm a passionate Web Developer and AI Engineer dedicated to building next-genera
 <!-- language-stats-start -->
 ## 📊 Language Stats
 
-## 📊 Language Stats
-
 ```mermaid
-bar
-    title "Code Language Distribution (%)"
-    x-axis ["Python", "JavaScript", "C++", "Java", "HTML", "CSS", "TypeScript", "Kotlin", "Shell", "Markdown", "PowerShell", "MySQL"]
-    y-axis "0" "20" "40" "60" "80" "100"
-    bar "Percentage" [45.2, 18.4, 12.6, 8.3, 5.1, 3.4, 2.8, 1.2, 0.9, 0.7, 0.5, 0.4]
-```
-
-### 📈 Full Breakdown
-
-| Language | Bytes | Percentage |
-|----------|-------|------------|
-| Python | 1,234,567 | 45.2% |
-| JavaScript | 567,890 | 18.4% |
-| C++ | 345,678 | 12.6% |
-| Java | 234,567 | 8.3% |
-| HTML | 156,789 | 5.1% |
-| CSS | 98,765 | 3.4% |
-| TypeScript | 87,654 | 2.8% |
-| Kotlin | 45,678 | 1.2% |
-| Shell | 34,567 | 0.9% |
-| Markdown | 23,456 | 0.7% |
-| PowerShell | 12,345 | 0.5% |
-| MySQL | 8,901 | 0.4% |
-
-*🔄 Last updated: 2026-05-03 14:30 UTC*
+pie showData
+    title Code Language Distribution
+    "Python" : 45.23
+    "JavaScript" : 18.45
+    "C++" : 12.67
+    "Java" : 8.34
+    "HTML" : 5.12
+    "CSS" : 3.45
+    "TypeScript" : 2.89
+    "Kotlin" : 1.23
+    "Shell" : 0.98
+    "Markdown" : 0.67
+    "PowerShell" : 0.45
+    "MySQL" : 0.34
+    "MongoDB" : 0.12
 <!-- language-stats-end -->
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
