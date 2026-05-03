@@ -40,17 +40,24 @@ def aggregate_languages(repos):
     return lang_bytes
 
 def generate_stats_md(lang_bytes):
+   def generate_stats_md(lang_bytes):
     total = sum(lang_bytes.values())
     if total == 0:
         return "📊 No language data found."
 
     sorted_langs = sorted(lang_bytes.items(), key=lambda x: x[1], reverse=True)
-    lines = ["## 📊 Language Stats", "", "| Language | Percentage |", "|----------|------------|"]
+    
+    # Mermaid pie chart syntax
+    lines = ["## 📊 Language Stats", "", "```mermaid", "pie showData", "title Code Language Distribution"]
+    
     for lang, size in sorted_langs:
         pct = (size / total) * 100
-        if pct >= 0.5:  # Hide languages with <0.5% usage
-            lines.append(f"| {lang} | {pct:.1f}% |")
-    lines.append("")
+        if pct >= 1.0:  # Show languages with >=1% usage
+            # Escape special chars in language names for Mermaid
+            safe_lang = lang.replace('"', '\\"')
+            lines.append(f'    "{safe_lang}" : {pct:.1f}')
+    
+    lines.extend(["```", ""])
     return "\n".join(lines)
 
 def update_readme(new_content):
