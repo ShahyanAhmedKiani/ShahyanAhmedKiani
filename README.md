@@ -37,9 +37,23 @@ pie showData
     "Shell" : 0.12
 ```
 
+### 📈 Detailed Breakdown
 
+| Language | Bytes | Percentage |
+|----------|-------|------------|
+| Jupyter Notebook | 1,401,770 | 63.62% |
+| C# | 276,722 | 12.56% |
+| HTML | 218,668 | 9.92% |
+| Kotlin | 81,979 | 3.72% |
+| C++ | 62,442 | 2.83% |
+| Python | 56,979 | 2.59% |
+| CSS | 48,631 | 2.21% |
+| JavaScript | 34,130 | 1.55% |
+| Java | 14,722 | 0.67% |
+| Dockerfile | 4,520 | 0.21% |
+| Shell | 2,683 | 0.12% |
 
-*🔄 Last updated: 2026-05-04 08:16 UTC*
+*🔄 Last updated: 2026-05-04 13:21 UTC*
 <!-- language-stats-end -->
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
