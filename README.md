@@ -2,11 +2,14 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&text=Shahyan%20Ahmed%20Kiani&fontSize=55&fontAlignY=40&color=0:000428,50:004e92,100:00c6ff&fontColor=ffffff&animation=fadeIn" />
 
-<a href="https://shahyan-ahmed-kiani-protfolio.vercel.app/" target="_blank">
-  <img src="https://img.shields.io/badge/View-Portfolio-blue?style=for-the-badge&logo=google-chrome" alt="Portfolio Button"/>
-</a>
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Now-blue?style=for-the-badge)](https://shahyan-ahmed-kiani-protfolio.vercel.app/)
 
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/shahyanahmed598) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/shahyan-ahmed-kiani-8995a72b1) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@https://www.youtube.com/@Ahmed_NexGen) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:shahyanahmed598@gmail.com) 
+
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shahyan-ahmed-kiani-8995a72b1/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/shahyanahmed598)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@NexGenLearning-598)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shahyanahmed598@gmail.com)
 
 </div>
 
