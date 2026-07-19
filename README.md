@@ -15,7 +15,7 @@
 
 <div align="center">
 
-The Developer Behind AhmedNextGen 🚀
+
 
 
 ------------------------------------
